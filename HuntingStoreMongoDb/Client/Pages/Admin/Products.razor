@@ -1,0 +1,140 @@
+﻿@page "/admin/products"
+@layout AdminLayout
+
+@using BlazorPagination
+@inject State state
+@inject NavigationManager navigationManager
+@inject IAdminService adminService
+@inject IJSRuntime jsRuntime
+@using Microsoft.AspNetCore.Authorization
+
+@attribute [Authorize]
+
+<div class="container-fluid">
+    @if (!isLoaded)
+    {
+        <div class="container mt-3">
+            <div class="spinner-border text-success align-self-sm-center" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <h2>Getting datas from database...</h2>
+        </div>
+    }
+    else
+    {
+        <table class="table table-sm table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @if (ProductsData.Results != null && ProductsData.Results.Length > 0)
+                {
+                    foreach (var product in ProductsData.Results)
+                    {
+                        <tr>
+                            <td>@product.Id</td>
+                            <td>@product.Name</td>
+                            <td>@product.Category</td>
+                            <td>@product.Price.ToString()</td>
+                            <td>
+                                <button class="btn btn-success btn-sm" @onclick="@(_ => EditProduct(product))">Edit</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger btn-sm" @onclick="@(_ => DeleteProduct(product))">Delete</button>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    }
+
+    <div class="mt-2">
+        <button class="btn btn-primary float-left" @onclick="@(e => CreateProduct(e))">Create</button>
+
+        <BlazorPager CurrentPage="@ProductsData.CurrentPage"
+                     PageCount="@ProductsData.PageCount"
+                     VisiblePages="@_visiblePages"
+                     ShowFirstLast="true"
+                     ShowPageNumbers="true"
+                     FirstText="&laquo;"
+                     LastText="&raquo;"
+                     NextText="&rsaquo;"
+                     PreviousText="&lsaquo;"
+                     OnPageChanged="@(async e => { _page = e; await GetData(); })">
+        </BlazorPager>
+    </div>
+</div>
+
+<CascadingValue Value="@Message">
+    <MessageModal CloseModal="@CloseMessageModal"></MessageModal>
+</CascadingValue>
+
+
+@code {
+
+    private PagedResult<Product> ProductsData { get; set; } = new PagedResult<Product>();
+    private int _pageSize = 8;
+    private int _page = 1;
+    private int _visiblePages = 0;
+    public Product _products = new Product();
+    private string Message { get; set; }
+    private bool isLoaded = false;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        state.AdminProducts = await adminService.GetProductsAsync();
+        _visiblePages = (state.AdminProducts.Count / _pageSize) + 1;
+        await GetData();
+    }
+
+    private async Task GetData()
+    {
+        ProductsData = GetProduct(_page, _pageSize);
+        await Task.CompletedTask;
+        isLoaded = true;
+        StateHasChanged();
+    }
+
+    private PagedResult<Product> GetProduct(int page, int pageSize)
+    {
+        return state.AdminProducts.AsQueryable().ToPagedResult(page, pageSize);
+    }
+
+    private void EditProduct(Product product)
+    {
+        var id = product.Id;
+        navigationManager.NavigateTo("/admin/editor/" + id);
+    }
+
+    private async Task DeleteProduct(Product product)
+    {
+        var response = await adminService.DeleteProductAsync(product);
+        if (response.IsSuccessStatusCode)
+        {
+            Message = await response.Content.ReadAsStringAsync();
+            await jsRuntime.InvokeVoidAsync("ShowMessageModal");
+        }
+    }
+
+    private void CreateProduct(MouseEventArgs e)
+    {
+        navigationManager.NavigateTo("/admin/create");
+    }
+
+    private async Task CloseMessageModal()
+    {
+        state.AdminProducts = new List<Product>();
+        state.AdminProducts = await adminService.GetProductsAsync();
+        await GetData();
+        await jsRuntime.InvokeVoidAsync("HideMessageModal");
+    }
+}

@@ -1,0 +1,90 @@
+﻿@page "/admin/orders"
+@layout AdminLayout
+
+@inject IAdminService adminService
+@inject IJSRuntime jsRuntime
+@inject NavigationManager navigationManager
+@inject State state
+@using Microsoft.AspNetCore.Authorization
+
+@attribute [Authorize]
+
+@if (!isLoaded)
+{
+    <div class="container mt-3">
+        <div class="spinner-border text-success align-self-sm-center" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <h2>Getting datas from database...</h2>
+    </div>
+}
+
+else
+{
+    <OrderTable TableTitle="Unshipped Orders" Orders="UnshippedOrders"
+                ButtonLabel="Ship" OrderSelected="ShipOrder"></OrderTable>
+
+    <OrderTable TableTitle="Shipped Orders" Orders="ShippedOrders"
+                ButtonLabel="Reset" OrderSelected="ResetOrder"></OrderTable>
+
+    <button class="btn btn-info" @onclick="@(e => UpdateData())">Refresh Data</button>
+
+    <CascadingValue Value="@Message">
+        <MessageModal CloseModal="@CloseMessageModal"></MessageModal>
+    </CascadingValue>
+
+}
+
+@code {
+
+
+    private List<OrderViewModel> UnshippedOrders { get; set; } = new List<OrderViewModel>();
+    private List<OrderViewModel> ShippedOrders { get; set; } = new List<OrderViewModel>();
+    private string Message { get; set; }
+    private bool isLoaded = false;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (state.AllOrders.Count == 0)
+        {
+            state.AllOrders = await adminService.GetAllOrdersAsync();
+
+        }
+        UnshippedOrders = state.AllOrders.Where(x => x.Shipped == false).ToList();
+        ShippedOrders = state.AllOrders.Where(x => x.Shipped == true).ToList();
+        isLoaded = true;
+    }
+
+    private async Task UpdateData()
+    {
+        state.AllOrders = await adminService.GetAllOrdersAsync();
+        UnshippedOrders = state.AllOrders.Where(x => x.Shipped == false).ToList();
+        ShippedOrders = state.AllOrders.Where(x => x.Shipped == true).ToList();
+    }
+
+    private async Task ShipOrder(string id) => await UpdateOrder(id, true);
+    private async Task ResetOrder(string id) => await UpdateOrder(id, false);
+
+    private async Task UpdateOrder(string id, bool shipValue)
+    {
+        var order = state.AllOrders.Where(x => x.Id == id).FirstOrDefault();
+        order.Shipped = shipValue;
+        var response = await adminService.UpdateOrderAsync(order);
+        if (response.IsSuccessStatusCode)
+        {
+            Message = await response.Content.ReadAsStringAsync();
+            await jsRuntime.InvokeVoidAsync("ShowMessageModal");
+
+        }
+        else
+        {
+            Message = await response.Content.ReadAsStringAsync();
+            await jsRuntime.InvokeVoidAsync("ShowMessageModal");
+        }
+    }
+
+    private void CloseMessageModal()
+    {
+        jsRuntime.InvokeVoidAsync("HideMessageModal");
+    }
+}

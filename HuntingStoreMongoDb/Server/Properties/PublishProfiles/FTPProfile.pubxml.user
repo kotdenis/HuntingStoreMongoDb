@@ -1,0 +1,2718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Этот файл используется процессом публикации или упаковки вашего веб-проекта. Можно настроить поведение этого процесса,
+изменив этот файл MSBuild. Подробности см. на странице https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6DVRAXXnXEehdBm/M4o4KAAAAAACAAAAAAAQZgAAAAEAACAAAADGl9Q3GGhgcXsJg5VnwaXd3h5htFLKMcqeLxAGkMn6qwAAAAAOgAAAAAIAACAAAABQz+wgqB4sbvzx3ylfswAyCWkdfB7A1LfFG5vI0tGmfSAAAADPrE4m/1lwXOMABu4EagbTgZ1OKQ9fzyFR+gnNfwBWkEAAAAB8bnVdnYeDVND0KRZ8t9koFRJbBQA/yAL3MItpU4a4NFdsDy+bSqMEnw/6PnluX/GB6k9FX4VgGYeHtig/+1BL</EncryptedPassword>
+    <_PublishTargetUrl>ftp://155.254.244.30/www.kotdeniss.somee.com</_PublishTargetUrl>
+    <History>False|2021-07-23T23:29:39.2049796Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>07/20/2021 09:43:43</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>07/22/2021 08:24:04</publishTime>
+    </File>
+    <File Include="BlazorDebugProxy/BrowserDebugHost.dll">
+      <publishTime>06/15/2021 22:12:58</publishTime>
+    </File>
+    <File Include="BlazorDebugProxy/BrowserDebugHost.runtimeconfig.json">
+      <publishTime>06/15/2021 22:13:00</publishTime>
+    </File>
+    <File Include="BlazorDebugProxy/BrowserDebugProxy.dll">
+      <publishTime>06/15/2021 22:12:56</publishTime>
+    </File>
+    <File Include="BlazorDebugProxy/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>03/03/2020 12:02:18</publishTime>
+    </File>
+    <File Include="BlazorDebugProxy/Microsoft.CodeAnalysis.dll">
+      <publishTime>03/03/2020 12:00:10</publishTime>
+    </File>
+    <File Include="BlazorDebugProxy/Mono.Cecil.dll">
+      <publishTime>02/20/2020 00:40:34</publishTime>
+    </File>
+    <File Include="BlazorDebugProxy/Mono.Cecil.Pdb.dll">
+      <publishTime>02/20/2020 00:40:36</publishTime>
+    </File>
+    <File Include="BlazorDebugProxy/Mono.Cecil.Rocks.dll">
+      <publishTime>02/20/2020 00:40:36</publishTime>
+    </File>
+    <File Include="BlazorDebugProxy/Newtonsoft.Json.dll">
+      <publishTime>11/09/2019 03:56:44</publishTime>
+    </File>
+    <File Include="BlazorPagination.dll">
+      <publishTime>05/25/2021 23:29:02</publishTime>
+    </File>
+    <File Include="DnsClient.dll">
+      <publishTime>02/14/2021 19:20:00</publishTime>
+    </File>
+    <File Include="HuntingStoreMongoDb.Client.dll">
+      <publishTime>07/24/2021 00:43:09</publishTime>
+    </File>
+    <File Include="HuntingStoreMongoDb.Client.pdb">
+      <publishTime>07/24/2021 00:43:09</publishTime>
+    </File>
+    <File Include="HuntingStoreMongoDb.Server.deps.json">
+      <publishTime>07/24/2021 00:51:34</publishTime>
+    </File>
+    <File Include="HuntingStoreMongoDb.Server.dll">
+      <publishTime>07/24/2021 00:51:31</publishTime>
+    </File>
+    <File Include="HuntingStoreMongoDb.Server.exe">
+      <publishTime>07/24/2021 00:51:31</publishTime>
+    </File>
+    <File Include="HuntingStoreMongoDb.Server.pdb">
+      <publishTime>07/24/2021 00:51:31</publishTime>
+    </File>
+    <File Include="HuntingStoreMongoDb.Server.runtimeconfig.json">
+      <publishTime>07/24/2021 00:43:29</publishTime>
+    </File>
+    <File Include="HuntingStoreMongoDb.Server.Views.dll">
+      <publishTime>07/24/2021 00:51:33</publishTime>
+    </File>
+    <File Include="HuntingStoreMongoDb.Server.Views.pdb">
+      <publishTime>07/24/2021 00:51:33</publishTime>
+    </File>
+    <File Include="HuntingStoreMongoDb.Shared.dll">
+      <publishTime>07/24/2021 00:43:05</publishTime>
+    </File>
+    <File Include="HuntingStoreMongoDb.Shared.pdb">
+      <publishTime>07/24/2021 00:43:05</publishTime>
+    </File>
+    <File Include="libman.json">
+      <publishTime>07/21/2021 02:05:34</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Authentication.JwtBearer.dll">
+      <publishTime>06/18/2021 21:15:24</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Authorization.dll">
+      <publishTime>06/18/2021 21:14:52</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Components.Authorization.dll">
+      <publishTime>06/18/2021 21:15:56</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Components.dll">
+      <publishTime>06/18/2021 21:13:50</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Components.Forms.dll">
+      <publishTime>06/18/2021 21:15:00</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Components.Web.dll">
+      <publishTime>06/18/2021 21:15:02</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Components.WebAssembly.dll">
+      <publishTime>06/18/2021 21:15:04</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Components.WebAssembly.Server.dll">
+      <publishTime>06/18/2021 21:15:08</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Metadata.dll">
+      <publishTime>06/18/2021 21:14:50</publishTime>
+    </File>
+    <File Include="Microsoft.Bcl.AsyncInterfaces.dll">
+      <publishTime>04/14/2020 22:39:12</publishTime>
+    </File>
+    <File Include="Microsoft.Bcl.HashCode.dll">
+      <publishTime>11/15/2019 08:38:50</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Abstractions.dll">
+      <publishTime>07/22/2020 05:48:28</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.dll">
+      <publishTime>07/22/2020 05:48:46</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.dll">
+      <publishTime>06/15/2021 22:12:46</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.JsonWebTokens.dll">
+      <publishTime>06/30/2020 01:04:58</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Logging.dll">
+      <publishTime>06/30/2020 01:05:58</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.dll">
+      <publishTime>06/30/2020 01:06:48</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.OpenIdConnect.dll">
+      <publishTime>06/30/2020 01:13:54</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Tokens.dll">
+      <publishTime>06/30/2020 01:09:50</publishTime>
+    </File>
+    <File Include="Microsoft.JSInterop.dll">
+      <publishTime>06/18/2021 21:14:44</publishTime>
+    </File>
+    <File Include="Microsoft.JSInterop.WebAssembly.dll">
+      <publishTime>06/18/2021 21:14:48</publishTime>
+    </File>
+    <File Include="MongoDB.Bson.dll">
+      <publishTime>07/13/2021 22:17:06</publishTime>
+    </File>
+    <File Include="MongoDB.Driver.Core.dll">
+      <publishTime>07/13/2021 22:17:16</publishTime>
+    </File>
+    <File Include="MongoDB.Driver.dll">
+      <publishTime>07/13/2021 22:17:26</publishTime>
+    </File>
+    <File Include="MongoDB.Libmongocrypt.dll">
+      <publishTime>03/18/2021 01:08:06</publishTime>
+    </File>
+    <File Include="Newtonsoft.Json.dll">
+      <publishTime>03/17/2021 20:03:36</publishTime>
+    </File>
+    <File Include="runtimes/osx/native/libmongocrypt.dylib">
+      <publishTime>01/22/2021 20:28:56</publishTime>
+    </File>
+    <File Include="runtimes/win/native/libzstd.dll">
+      <publishTime>07/13/2021 21:01:18</publishTime>
+    </File>
+    <File Include="runtimes/win/native/mongocrypt.dll">
+      <publishTime>01/22/2021 20:28:56</publishTime>
+    </File>
+    <File Include="runtimes/win/native/snappy32.dll">
+      <publishTime>07/13/2021 21:01:18</publishTime>
+    </File>
+    <File Include="runtimes/win/native/snappy64.dll">
+      <publishTime>07/13/2021 21:01:18</publishTime>
+    </File>
+    <File Include="SharpCompress.dll">
+      <publishTime>02/27/2019 15:59:52</publishTime>
+    </File>
+    <File Include="System.IdentityModel.Tokens.Jwt.dll">
+      <publishTime>06/30/2020 01:03:46</publishTime>
+    </File>
+    <File Include="System.IO.Pipelines.dll">
+      <publishTime>11/26/2020 02:01:10</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>07/24/2021 00:57:51</publishTime>
+    </File>
+    <File Include="wwwroot/css/app.css">
+      <publishTime>07/20/2021 09:43:44</publishTime>
+    </File>
+    <File Include="wwwroot/css/app.css.br">
+      <publishTime>07/24/2021 00:54:08</publishTime>
+    </File>
+    <File Include="wwwroot/css/app.css.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/css/bootstrap/bootstrap.min.css">
+      <publishTime>07/20/2021 09:43:44</publishTime>
+    </File>
+    <File Include="wwwroot/css/bootstrap/bootstrap.min.css.br">
+      <publishTime>07/24/2021 00:54:09</publishTime>
+    </File>
+    <File Include="wwwroot/css/bootstrap/bootstrap.min.css.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/css/bootstrap/bootstrap.min.css.map">
+      <publishTime>07/20/2021 09:43:44</publishTime>
+    </File>
+    <File Include="wwwroot/css/bootstrap/bootstrap.min.css.map.br">
+      <publishTime>07/24/2021 00:54:18</publishTime>
+    </File>
+    <File Include="wwwroot/css/bootstrap/bootstrap.min.css.map.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/FONT-LICENSE">
+      <publishTime>07/20/2021 09:43:44</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/FONT-LICENSE.br">
+      <publishTime>07/24/2021 00:54:18</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/FONT-LICENSE.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css">
+      <publishTime>07/20/2021 09:43:44</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css.br">
+      <publishTime>07/24/2021 00:54:10</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/fonts/open-iconic.eot">
+      <publishTime>07/20/2021 09:43:44</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/fonts/open-iconic.eot.br">
+      <publishTime>07/24/2021 00:54:10</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/fonts/open-iconic.eot.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/fonts/open-iconic.otf">
+      <publishTime>07/20/2021 09:43:44</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/fonts/open-iconic.otf.br">
+      <publishTime>07/24/2021 00:54:11</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/fonts/open-iconic.otf.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/fonts/open-iconic.svg">
+      <publishTime>07/20/2021 09:43:44</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/fonts/open-iconic.svg.br">
+      <publishTime>07/24/2021 00:54:12</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/fonts/open-iconic.svg.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/fonts/open-iconic.ttf">
+      <publishTime>07/20/2021 09:43:44</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/fonts/open-iconic.ttf.br">
+      <publishTime>07/24/2021 00:54:13</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/fonts/open-iconic.ttf.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/fonts/open-iconic.woff">
+      <publishTime>07/20/2021 09:43:44</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/fonts/open-iconic.woff.br">
+      <publishTime>07/24/2021 00:54:13</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/font/fonts/open-iconic.woff.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/ICON-LICENSE">
+      <publishTime>07/20/2021 09:43:44</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/ICON-LICENSE.br">
+      <publishTime>07/24/2021 00:54:13</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/ICON-LICENSE.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/README.md">
+      <publishTime>07/20/2021 09:43:44</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/README.md.br">
+      <publishTime>07/24/2021 00:54:13</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic/README.md.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico">
+      <publishTime>07/20/2021 09:43:44</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico.br">
+      <publishTime>07/24/2021 00:54:13</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/all.css">
+      <publishTime>07/21/2021 02:05:36</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/all.css.br">
+      <publishTime>07/24/2021 00:54:15</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/all.css.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/all.min.css">
+      <publishTime>07/21/2021 02:05:36</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/all.min.css.br">
+      <publishTime>07/24/2021 00:54:16</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/all.min.css.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/brands.css">
+      <publishTime>07/21/2021 02:05:37</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/brands.css.br">
+      <publishTime>07/24/2021 00:54:16</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/brands.css.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/brands.min.css">
+      <publishTime>07/21/2021 02:05:37</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/brands.min.css.br">
+      <publishTime>07/24/2021 00:54:16</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/brands.min.css.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/fontawesome.css">
+      <publishTime>07/21/2021 02:05:37</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/fontawesome.css.br">
+      <publishTime>07/24/2021 00:54:18</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/fontawesome.css.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/fontawesome.min.css">
+      <publishTime>07/21/2021 02:05:37</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/fontawesome.min.css.br">
+      <publishTime>07/24/2021 00:54:18</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/fontawesome.min.css.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/regular.css">
+      <publishTime>07/21/2021 02:05:37</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/regular.css.br">
+      <publishTime>07/24/2021 00:54:18</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/regular.css.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/regular.min.css">
+      <publishTime>07/21/2021 02:05:38</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/regular.min.css.br">
+      <publishTime>07/24/2021 00:54:18</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/regular.min.css.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/solid.css">
+      <publishTime>07/21/2021 02:05:38</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/solid.css.br">
+      <publishTime>07/24/2021 00:54:18</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/solid.css.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/solid.min.css">
+      <publishTime>07/21/2021 02:05:38</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/solid.min.css.br">
+      <publishTime>07/24/2021 00:54:18</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/solid.min.css.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/svg-with-js.css">
+      <publishTime>07/21/2021 02:05:38</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/svg-with-js.css.br">
+      <publishTime>07/24/2021 00:54:19</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/svg-with-js.css.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/svg-with-js.min.css">
+      <publishTime>07/21/2021 02:05:38</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/svg-with-js.min.css.br">
+      <publishTime>07/24/2021 00:54:19</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/svg-with-js.min.css.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/v4-shims.css">
+      <publishTime>07/21/2021 02:05:38</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/v4-shims.css.br">
+      <publishTime>07/24/2021 00:54:20</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/v4-shims.css.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/v4-shims.min.css">
+      <publishTime>07/21/2021 02:05:38</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/v4-shims.min.css.br">
+      <publishTime>07/24/2021 00:54:21</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/css/v4-shims.min.css.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/all.js">
+      <publishTime>07/21/2021 02:05:39</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/all.js.br">
+      <publishTime>07/24/2021 00:55:11</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/all.js.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/all.min.js">
+      <publishTime>07/21/2021 02:05:39</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/all.min.js.br">
+      <publishTime>07/24/2021 00:56:02</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/all.min.js.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/brands.js">
+      <publishTime>07/21/2021 02:05:39</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/brands.js.br">
+      <publishTime>07/24/2021 00:56:17</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/brands.js.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/brands.min.js">
+      <publishTime>07/21/2021 02:05:40</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/brands.min.js.br">
+      <publishTime>07/24/2021 00:56:32</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/brands.min.js.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/conflict-detection.js">
+      <publishTime>07/21/2021 02:05:41</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/conflict-detection.js.br">
+      <publishTime>07/24/2021 00:56:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/conflict-detection.js.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/conflict-detection.min.js">
+      <publishTime>07/21/2021 02:05:41</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/conflict-detection.min.js.br">
+      <publishTime>07/24/2021 00:56:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/conflict-detection.min.js.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/fontawesome.js">
+      <publishTime>07/21/2021 02:05:41</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/fontawesome.js.br">
+      <publishTime>07/24/2021 00:56:36</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/fontawesome.js.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/fontawesome.min.js">
+      <publishTime>07/21/2021 02:05:42</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/fontawesome.min.js.br">
+      <publishTime>07/24/2021 00:56:37</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/fontawesome.min.js.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/regular.js">
+      <publishTime>07/21/2021 02:05:42</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/regular.js.br">
+      <publishTime>07/24/2021 00:54:21</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/regular.js.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/regular.min.js">
+      <publishTime>07/21/2021 02:05:42</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/regular.min.js.br">
+      <publishTime>07/24/2021 00:54:23</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/regular.min.js.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/solid.js">
+      <publishTime>07/21/2021 02:05:42</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/solid.js.br">
+      <publishTime>07/24/2021 00:54:45</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/solid.js.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/solid.min.js">
+      <publishTime>07/21/2021 02:05:43</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/solid.min.js.br">
+      <publishTime>07/24/2021 00:55:11</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/solid.min.js.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/v4-shims.js">
+      <publishTime>07/21/2021 02:05:43</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/v4-shims.js.br">
+      <publishTime>07/24/2021 00:54:19</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/v4-shims.js.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/v4-shims.min.js">
+      <publishTime>07/21/2021 02:05:43</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/v4-shims.min.js.br">
+      <publishTime>07/24/2021 00:54:19</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/js/v4-shims.min.js.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/sprites/brands.svg">
+      <publishTime>07/21/2021 02:05:43</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/sprites/brands.svg.br">
+      <publishTime>07/24/2021 00:54:34</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/sprites/brands.svg.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/sprites/regular.svg">
+      <publishTime>07/21/2021 02:05:44</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/sprites/regular.svg.br">
+      <publishTime>07/24/2021 00:54:37</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/sprites/regular.svg.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/sprites/solid.svg">
+      <publishTime>07/21/2021 02:05:44</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/sprites/solid.svg.br">
+      <publishTime>07/24/2021 00:55:04</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/sprites/solid.svg.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-brands-400.eot">
+      <publishTime>07/21/2021 02:05:44</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-brands-400.eot.br">
+      <publishTime>07/24/2021 00:55:10</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-brands-400.eot.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-brands-400.svg.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-brands-400.ttf">
+      <publishTime>07/21/2021 02:05:44</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-brands-400.ttf.br">
+      <publishTime>07/24/2021 00:55:01</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-brands-400.ttf.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-brands-400.woff">
+      <publishTime>07/21/2021 02:05:44</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-brands-400.woff.br">
+      <publishTime>07/24/2021 00:55:03</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-brands-400.woff.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-brands-400.woff2">
+      <publishTime>07/21/2021 02:05:44</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-brands-400.woff2.br">
+      <publishTime>07/24/2021 00:55:04</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-brands-400.woff2.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-regular-400.eot">
+      <publishTime>07/21/2021 02:05:44</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-regular-400.eot.br">
+      <publishTime>07/24/2021 00:55:03</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-regular-400.eot.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-regular-400.svg">
+      <publishTime>07/21/2021 02:05:44</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-regular-400.svg.br">
+      <publishTime>07/24/2021 00:55:08</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-regular-400.svg.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-regular-400.ttf">
+      <publishTime>07/21/2021 02:05:44</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-regular-400.ttf.br">
+      <publishTime>07/24/2021 00:55:05</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-regular-400.ttf.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-regular-400.woff">
+      <publishTime>07/21/2021 02:05:45</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-regular-400.woff.br">
+      <publishTime>07/24/2021 00:55:06</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-regular-400.woff.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-regular-400.woff2">
+      <publishTime>07/21/2021 02:05:45</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-regular-400.woff2.br">
+      <publishTime>07/24/2021 00:55:07</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-regular-400.woff2.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-solid-900.eot">
+      <publishTime>07/21/2021 02:05:45</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-solid-900.eot.br">
+      <publishTime>07/24/2021 00:55:16</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-solid-900.eot.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-solid-900.svg">
+      <publishTime>07/21/2021 02:05:45</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-solid-900.svg.br">
+      <publishTime>07/24/2021 00:55:46</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-solid-900.ttf">
+      <publishTime>07/21/2021 02:05:45</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-solid-900.ttf.br">
+      <publishTime>07/24/2021 00:55:57</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-solid-900.ttf.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-solid-900.woff">
+      <publishTime>07/21/2021 02:05:45</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-solid-900.woff.br">
+      <publishTime>07/24/2021 00:55:59</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-solid-900.woff.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-solid-900.woff2">
+      <publishTime>07/21/2021 02:05:45</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-solid-900.woff2.br">
+      <publishTime>07/24/2021 00:56:00</publishTime>
+    </File>
+    <File Include="wwwroot/font-awesome/webfonts/fa-solid-900.woff2.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/index.html">
+      <publishTime>07/22/2021 01:07:47</publishTime>
+    </File>
+    <File Include="wwwroot/index.html.br">
+      <publishTime>07/24/2021 00:55:11</publishTime>
+    </File>
+    <File Include="wwwroot/index.html.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/js/interop.js">
+      <publishTime>07/22/2021 06:01:17</publishTime>
+    </File>
+    <File Include="wwwroot/js/interop.js.br">
+      <publishTime>07/24/2021 00:55:11</publishTime>
+    </File>
+    <File Include="wwwroot/js/interop.js.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.css">
+      <publishTime>07/20/2021 19:21:54</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.css.br">
+      <publishTime>07/24/2021 00:55:14</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.css.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.css.map">
+      <publishTime>07/20/2021 19:21:54</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.css.map.br">
+      <publishTime>07/24/2021 00:55:19</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.css.map.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.min.css">
+      <publishTime>07/20/2021 19:21:54</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.min.css.br">
+      <publishTime>07/24/2021 00:55:21</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.min.css.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.min.css.map">
+      <publishTime>07/20/2021 19:21:54</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.min.css.map.br">
+      <publishTime>07/24/2021 00:55:24</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.min.css.map.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.rtl.css">
+      <publishTime>07/20/2021 19:21:55</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.rtl.css.br">
+      <publishTime>07/24/2021 00:55:27</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.rtl.css.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.rtl.css.map">
+      <publishTime>07/20/2021 19:21:55</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.rtl.css.map.br">
+      <publishTime>07/24/2021 00:55:34</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.rtl.css.map.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.rtl.min.css">
+      <publishTime>07/20/2021 19:21:55</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.rtl.min.css.br">
+      <publishTime>07/24/2021 00:55:13</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.rtl.min.css.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.rtl.min.css.map">
+      <publishTime>07/20/2021 19:21:55</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.rtl.min.css.map.br">
+      <publishTime>07/24/2021 00:55:16</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-grid.rtl.min.css.map.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.css">
+      <publishTime>07/20/2021 19:21:56</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.css.br">
+      <publishTime>07/24/2021 00:55:16</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.css.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.css.map">
+      <publishTime>07/20/2021 19:21:56</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.css.map.br">
+      <publishTime>07/24/2021 00:55:19</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.css.map.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.min.css">
+      <publishTime>07/20/2021 19:21:56</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.min.css.br">
+      <publishTime>07/24/2021 00:55:20</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.min.css.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.min.css.map">
+      <publishTime>07/20/2021 19:21:56</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.min.css.map.br">
+      <publishTime>07/24/2021 00:55:20</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.min.css.map.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.rtl.css">
+      <publishTime>07/20/2021 19:21:56</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.rtl.css.br">
+      <publishTime>07/24/2021 00:55:21</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.rtl.css.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.rtl.css.map">
+      <publishTime>07/20/2021 19:21:57</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.rtl.css.map.br">
+      <publishTime>07/24/2021 00:55:24</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.rtl.css.map.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.rtl.min.css">
+      <publishTime>07/20/2021 19:21:57</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.rtl.min.css.br">
+      <publishTime>07/24/2021 00:55:17</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.rtl.min.css.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.rtl.min.css.map">
+      <publishTime>07/20/2021 19:21:57</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.rtl.min.css.map.br">
+      <publishTime>07/24/2021 00:55:18</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-reboot.rtl.min.css.map.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.css">
+      <publishTime>07/20/2021 19:21:57</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.css.br">
+      <publishTime>07/24/2021 00:55:20</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.css.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.css.map">
+      <publishTime>07/20/2021 19:21:57</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.css.map.br">
+      <publishTime>07/24/2021 00:55:26</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.css.map.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.min.css">
+      <publishTime>07/20/2021 19:21:58</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.min.css.br">
+      <publishTime>07/24/2021 00:55:28</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.min.css.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.min.css.map">
+      <publishTime>07/20/2021 19:21:58</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.min.css.map.br">
+      <publishTime>07/24/2021 00:55:32</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.min.css.map.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.rtl.css">
+      <publishTime>07/20/2021 19:21:58</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.rtl.css.br">
+      <publishTime>07/24/2021 00:55:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.rtl.css.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.rtl.css.map">
+      <publishTime>07/20/2021 19:21:58</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.rtl.css.map.br">
+      <publishTime>07/24/2021 00:55:42</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.rtl.css.map.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.rtl.min.css">
+      <publishTime>07/20/2021 19:21:58</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.rtl.min.css.br">
+      <publishTime>07/24/2021 00:55:25</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.rtl.min.css.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.rtl.min.css.map">
+      <publishTime>07/20/2021 19:21:58</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.rtl.min.css.map.br">
+      <publishTime>07/24/2021 00:55:29</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap-utilities.rtl.min.css.map.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.css">
+      <publishTime>07/20/2021 19:21:58</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.css.br">
+      <publishTime>07/24/2021 00:55:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.css.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.css.map">
+      <publishTime>07/20/2021 19:21:59</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.css.map.br">
+      <publishTime>07/24/2021 00:55:57</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.css.map.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.min.css">
+      <publishTime>07/20/2021 19:22:00</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.min.css.br">
+      <publishTime>07/24/2021 00:56:01</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.min.css.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.min.css.map">
+      <publishTime>07/20/2021 19:22:00</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.min.css.map.br">
+      <publishTime>07/24/2021 00:56:14</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.min.css.map.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.rtl.css">
+      <publishTime>07/20/2021 19:22:02</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.rtl.css.br">
+      <publishTime>07/24/2021 00:56:19</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.rtl.css.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.rtl.css.map">
+      <publishTime>07/20/2021 19:22:02</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.rtl.css.map.br">
+      <publishTime>07/24/2021 00:56:34</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.rtl.css.map.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.rtl.min.css">
+      <publishTime>07/20/2021 19:22:02</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.rtl.min.css.br">
+      <publishTime>07/24/2021 00:56:38</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.rtl.min.css.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.rtl.min.css.map">
+      <publishTime>07/20/2021 19:22:02</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.rtl.min.css.map.br">
+      <publishTime>07/24/2021 00:56:48</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/css/bootstrap.rtl.min.css.map.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.bundle.js">
+      <publishTime>07/20/2021 19:22:03</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.bundle.js.br">
+      <publishTime>07/24/2021 00:56:52</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.bundle.js.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.bundle.js.map">
+      <publishTime>07/20/2021 19:22:03</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.bundle.js.map.br">
+      <publishTime>07/24/2021 00:56:59</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.bundle.js.map.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.bundle.min.js">
+      <publishTime>07/20/2021 19:22:03</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.bundle.min.js.br">
+      <publishTime>07/24/2021 00:57:00</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.bundle.min.js.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.bundle.min.js.map">
+      <publishTime>07/20/2021 19:22:03</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.bundle.min.js.map.br">
+      <publishTime>07/24/2021 00:57:05</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.bundle.min.js.map.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.esm.js">
+      <publishTime>07/20/2021 19:22:03</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.esm.js.br">
+      <publishTime>07/24/2021 00:57:07</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.esm.js.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.esm.js.map">
+      <publishTime>07/20/2021 19:22:04</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.esm.js.map.br">
+      <publishTime>07/24/2021 00:57:10</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.esm.js.map.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.esm.min.js">
+      <publishTime>07/20/2021 19:22:05</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.esm.min.js.br">
+      <publishTime>07/24/2021 00:55:28</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.esm.min.js.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.esm.min.js.map">
+      <publishTime>07/20/2021 19:22:05</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.esm.min.js.map.br">
+      <publishTime>07/24/2021 00:55:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.esm.min.js.map.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.js">
+      <publishTime>07/20/2021 19:22:05</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.js.br">
+      <publishTime>07/24/2021 00:55:42</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.js.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.js.map">
+      <publishTime>07/20/2021 19:22:05</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.js.map.br">
+      <publishTime>07/24/2021 00:55:45</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.js.map.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.min.js">
+      <publishTime>07/20/2021 19:22:05</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.min.js.br">
+      <publishTime>07/24/2021 00:55:47</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.min.js.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.min.js.map">
+      <publishTime>07/20/2021 19:22:06</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.min.js.map.br">
+      <publishTime>07/24/2021 00:55:54</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/js/bootstrap.min.js.map.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/bootstrap-grid.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/bootstrap-grid.scss.br">
+      <publishTime>07/24/2021 00:55:54</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/bootstrap-grid.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/bootstrap-reboot.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/bootstrap-reboot.scss.br">
+      <publishTime>07/24/2021 00:55:54</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/bootstrap-reboot.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/bootstrap-utilities.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/bootstrap-utilities.scss.br">
+      <publishTime>07/24/2021 00:55:54</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/bootstrap-utilities.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/bootstrap.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/bootstrap.scss.br">
+      <publishTime>07/24/2021 00:55:54</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/bootstrap.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_floating-labels.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_floating-labels.scss.br">
+      <publishTime>07/24/2021 00:55:54</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_floating-labels.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_form-check.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_form-check.scss.br">
+      <publishTime>07/24/2021 00:55:54</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_form-check.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_form-control.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_form-control.scss.br">
+      <publishTime>07/24/2021 00:55:54</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_form-control.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_form-range.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_form-range.scss.br">
+      <publishTime>07/24/2021 00:55:55</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_form-range.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_form-select.scss.br">
+      <publishTime>07/24/2021 00:55:55</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_form-select.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_form-text.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_form-text.scss.br">
+      <publishTime>07/24/2021 00:55:55</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_form-text.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_input-group.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_input-group.scss.br">
+      <publishTime>07/24/2021 00:55:55</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_input-group.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_labels.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_labels.scss.br">
+      <publishTime>07/24/2021 00:55:55</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_labels.scss.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_validation.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_validation.scss.br">
+      <publishTime>07/24/2021 00:55:55</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/forms/_validation.scss.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/helpers/_clearfix.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/helpers/_clearfix.scss.br">
+      <publishTime>07/24/2021 00:55:42</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/helpers/_clearfix.scss.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/helpers/_colored-links.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/helpers/_colored-links.scss.br">
+      <publishTime>07/24/2021 00:55:42</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/helpers/_colored-links.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/helpers/_position.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/helpers/_position.scss.br">
+      <publishTime>07/24/2021 00:55:42</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/helpers/_position.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/helpers/_ratio.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/helpers/_ratio.scss.br">
+      <publishTime>07/24/2021 00:55:42</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/helpers/_ratio.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/helpers/_stretched-link.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/helpers/_stretched-link.scss.br">
+      <publishTime>07/24/2021 00:55:42</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/helpers/_stretched-link.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/helpers/_text-truncation.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/helpers/_text-truncation.scss.br">
+      <publishTime>07/24/2021 00:55:42</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/helpers/_text-truncation.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/helpers/_visually-hidden.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/helpers/_visually-hidden.scss.br">
+      <publishTime>07/24/2021 00:55:42</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/helpers/_visually-hidden.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_alert.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_alert.scss.br">
+      <publishTime>07/24/2021 00:55:43</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_alert.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_border-radius.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_border-radius.scss.br">
+      <publishTime>07/24/2021 00:55:43</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_border-radius.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_box-shadow.scss">
+      <publishTime>07/20/2021 19:22:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_box-shadow.scss.br">
+      <publishTime>07/24/2021 00:55:43</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_box-shadow.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_breakpoints.scss">
+      <publishTime>07/20/2021 19:22:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_breakpoints.scss.br">
+      <publishTime>07/24/2021 00:55:43</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_breakpoints.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_buttons.scss">
+      <publishTime>07/20/2021 19:22:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_buttons.scss.br">
+      <publishTime>07/24/2021 00:55:43</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_buttons.scss.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_caret.scss">
+      <publishTime>07/20/2021 19:22:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_caret.scss.br">
+      <publishTime>07/24/2021 00:55:43</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_caret.scss.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_clearfix.scss">
+      <publishTime>07/20/2021 19:22:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_clearfix.scss.br">
+      <publishTime>07/24/2021 00:55:43</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_clearfix.scss.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_color-scheme.scss">
+      <publishTime>07/20/2021 19:22:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_color-scheme.scss.br">
+      <publishTime>07/24/2021 00:55:43</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_color-scheme.scss.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_container.scss">
+      <publishTime>07/20/2021 19:22:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_container.scss.br">
+      <publishTime>07/24/2021 00:55:43</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_container.scss.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_deprecate.scss">
+      <publishTime>07/20/2021 19:22:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_deprecate.scss.br">
+      <publishTime>07/24/2021 00:55:42</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_deprecate.scss.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_forms.scss">
+      <publishTime>07/20/2021 19:22:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_forms.scss.br">
+      <publishTime>07/24/2021 00:55:42</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_forms.scss.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_gradients.scss">
+      <publishTime>07/20/2021 19:22:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_gradients.scss.br">
+      <publishTime>07/24/2021 00:55:43</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_gradients.scss.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_grid.scss">
+      <publishTime>07/20/2021 19:22:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_grid.scss.br">
+      <publishTime>07/24/2021 00:55:43</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_grid.scss.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_image.scss">
+      <publishTime>07/20/2021 19:22:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_image.scss.br">
+      <publishTime>07/24/2021 00:55:43</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_image.scss.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_list-group.scss">
+      <publishTime>07/20/2021 19:22:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_list-group.scss.br">
+      <publishTime>07/24/2021 00:55:43</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_list-group.scss.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_lists.scss">
+      <publishTime>07/20/2021 19:22:10</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_lists.scss.br">
+      <publishTime>07/24/2021 00:55:43</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_lists.scss.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_pagination.scss">
+      <publishTime>07/20/2021 19:22:10</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_pagination.scss.br">
+      <publishTime>07/24/2021 00:54:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_pagination.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_reset-text.scss">
+      <publishTime>07/20/2021 19:22:10</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_reset-text.scss.br">
+      <publishTime>07/24/2021 00:54:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_reset-text.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_resize.scss">
+      <publishTime>07/20/2021 19:22:10</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_resize.scss.br">
+      <publishTime>07/24/2021 00:54:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_resize.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_table-variants.scss">
+      <publishTime>07/20/2021 19:22:10</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_table-variants.scss.br">
+      <publishTime>07/24/2021 00:54:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_table-variants.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_text-truncate.scss">
+      <publishTime>07/20/2021 19:22:11</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_text-truncate.scss.br">
+      <publishTime>07/24/2021 00:54:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_text-truncate.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_transition.scss">
+      <publishTime>07/20/2021 19:22:11</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_transition.scss.br">
+      <publishTime>07/24/2021 00:54:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_transition.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_utilities.scss">
+      <publishTime>07/20/2021 19:22:11</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_utilities.scss.br">
+      <publishTime>07/24/2021 00:54:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_utilities.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_visually-hidden.scss">
+      <publishTime>07/20/2021 19:22:11</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_visually-hidden.scss.br">
+      <publishTime>07/24/2021 00:54:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/mixins/_visually-hidden.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/utilities/_api.scss">
+      <publishTime>07/20/2021 19:22:11</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/utilities/_api.scss.br">
+      <publishTime>07/24/2021 00:54:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/utilities/_api.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/vendor/_rfs.scss">
+      <publishTime>07/20/2021 19:22:11</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/vendor/_rfs.scss.br">
+      <publishTime>07/24/2021 00:54:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/vendor/_rfs.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_accordion.scss">
+      <publishTime>07/20/2021 19:22:06</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_accordion.scss.br">
+      <publishTime>07/24/2021 00:54:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_accordion.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_alert.scss">
+      <publishTime>07/20/2021 19:22:06</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_alert.scss.br">
+      <publishTime>07/24/2021 00:54:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_alert.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_badge.scss">
+      <publishTime>07/20/2021 19:22:06</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_badge.scss.br">
+      <publishTime>07/24/2021 00:54:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_badge.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_breadcrumb.scss">
+      <publishTime>07/20/2021 19:22:06</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_breadcrumb.scss.br">
+      <publishTime>07/24/2021 00:54:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_breadcrumb.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_button-group.scss">
+      <publishTime>07/20/2021 19:22:06</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_button-group.scss.br">
+      <publishTime>07/24/2021 00:54:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_button-group.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_buttons.scss">
+      <publishTime>07/20/2021 19:22:06</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_buttons.scss.br">
+      <publishTime>07/24/2021 00:54:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_buttons.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_card.scss">
+      <publishTime>07/20/2021 19:22:06</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_card.scss.br">
+      <publishTime>07/24/2021 00:54:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_card.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_carousel.scss">
+      <publishTime>07/20/2021 19:22:06</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_carousel.scss.br">
+      <publishTime>07/24/2021 00:54:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_carousel.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_close.scss">
+      <publishTime>07/20/2021 19:22:06</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_close.scss.br">
+      <publishTime>07/24/2021 00:54:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_close.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_containers.scss">
+      <publishTime>07/20/2021 19:22:06</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_containers.scss.br">
+      <publishTime>07/24/2021 00:54:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_containers.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_dropdown.scss">
+      <publishTime>07/20/2021 19:22:06</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_dropdown.scss.br">
+      <publishTime>07/24/2021 00:54:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_dropdown.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_forms.scss">
+      <publishTime>07/20/2021 19:22:06</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_forms.scss.br">
+      <publishTime>07/24/2021 00:54:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_forms.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_functions.scss">
+      <publishTime>07/20/2021 19:22:06</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_functions.scss.br">
+      <publishTime>07/24/2021 00:54:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_functions.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_grid.scss">
+      <publishTime>07/20/2021 19:22:06</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_grid.scss.br">
+      <publishTime>07/24/2021 00:54:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_grid.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_helpers.scss">
+      <publishTime>07/20/2021 19:22:06</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_helpers.scss.br">
+      <publishTime>07/24/2021 00:54:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_helpers.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_images.scss">
+      <publishTime>07/20/2021 19:22:07</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_images.scss.br">
+      <publishTime>07/24/2021 00:54:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_images.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_list-group.scss">
+      <publishTime>07/20/2021 19:22:07</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_list-group.scss.br">
+      <publishTime>07/24/2021 00:54:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_list-group.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_mixins.scss">
+      <publishTime>07/20/2021 19:22:07</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_mixins.scss.br">
+      <publishTime>07/24/2021 00:54:09</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_mixins.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_modal.scss">
+      <publishTime>07/20/2021 19:22:07</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_modal.scss.br">
+      <publishTime>07/24/2021 00:54:10</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_modal.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_nav.scss">
+      <publishTime>07/20/2021 19:22:07</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_nav.scss.br">
+      <publishTime>07/24/2021 00:54:10</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_nav.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_navbar.scss">
+      <publishTime>07/20/2021 19:22:07</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_navbar.scss.br">
+      <publishTime>07/24/2021 00:54:10</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_navbar.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_offcanvas.scss">
+      <publishTime>07/20/2021 19:22:07</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_offcanvas.scss.br">
+      <publishTime>07/24/2021 00:54:10</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_offcanvas.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_pagination.scss">
+      <publishTime>07/20/2021 19:22:07</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_pagination.scss.br">
+      <publishTime>07/24/2021 00:54:10</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_pagination.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_popover.scss">
+      <publishTime>07/20/2021 19:22:07</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_popover.scss.br">
+      <publishTime>07/24/2021 00:54:10</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_popover.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_progress.scss">
+      <publishTime>07/20/2021 19:22:07</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_progress.scss.br">
+      <publishTime>07/24/2021 00:54:10</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_progress.scss.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_reboot.scss">
+      <publishTime>07/20/2021 19:22:07</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_reboot.scss.br">
+      <publishTime>07/24/2021 00:54:10</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_reboot.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_root.scss">
+      <publishTime>07/20/2021 19:22:07</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_root.scss.br">
+      <publishTime>07/24/2021 00:54:10</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_root.scss.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_spinners.scss">
+      <publishTime>07/20/2021 19:22:07</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_spinners.scss.br">
+      <publishTime>07/24/2021 00:54:10</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_spinners.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_tables.scss">
+      <publishTime>07/20/2021 19:22:07</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_tables.scss.br">
+      <publishTime>07/24/2021 00:54:10</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_tables.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_toasts.scss">
+      <publishTime>07/20/2021 19:22:07</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_toasts.scss.br">
+      <publishTime>07/24/2021 00:54:11</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_toasts.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_tooltip.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_tooltip.scss.br">
+      <publishTime>07/24/2021 00:54:11</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_tooltip.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_transitions.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_transitions.scss.br">
+      <publishTime>07/24/2021 00:54:11</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_transitions.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_type.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_type.scss.br">
+      <publishTime>07/24/2021 00:54:11</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_type.scss.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_utilities.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_utilities.scss.br">
+      <publishTime>07/24/2021 00:54:11</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_utilities.scss.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_variables.scss">
+      <publishTime>07/20/2021 19:22:08</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_variables.scss.br">
+      <publishTime>07/24/2021 00:54:12</publishTime>
+    </File>
+    <File Include="wwwroot/twitter-bootstrap/scss/_variables.scss.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/blazor.boot.json">
+      <publishTime>07/24/2021 00:54:07</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/blazor.boot.json.br">
+      <publishTime>07/24/2021 00:57:32</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/blazor.boot.json.gz">
+      <publishTime>07/24/2021 00:57:37</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/blazor.webassembly.js">
+      <publishTime>06/18/2021 21:14:44</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/blazor.webassembly.js.br">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/blazor.webassembly.js.gz">
+      <publishTime>07/24/2021 00:57:37</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/BlazorPagination.dll">
+      <publishTime>07/24/2021 00:53:55</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/BlazorPagination.dll.br">
+      <publishTime>07/24/2021 00:57:23</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/BlazorPagination.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/DnsClient.dll">
+      <publishTime>07/24/2021 00:53:55</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/DnsClient.dll.br">
+      <publishTime>07/24/2021 00:57:24</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/DnsClient.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/dotnet.5.0.7.js">
+      <publishTime>05/05/2021 23:53:44</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/dotnet.5.0.7.js.br">
+      <publishTime>07/24/2021 00:57:22</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/dotnet.5.0.7.js.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/dotnet.timezones.blat">
+      <publishTime>05/05/2021 23:53:24</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/dotnet.timezones.blat.br">
+      <publishTime>07/24/2021 00:54:22</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/dotnet.timezones.blat.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/dotnet.wasm">
+      <publishTime>05/05/2021 23:53:42</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/dotnet.wasm.br">
+      <publishTime>07/24/2021 00:56:40</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/dotnet.wasm.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/HuntingStoreMongoDb.Client.dll">
+      <publishTime>07/24/2021 00:53:59</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/HuntingStoreMongoDb.Client.dll.br">
+      <publishTime>07/24/2021 00:57:16</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/HuntingStoreMongoDb.Client.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/HuntingStoreMongoDb.Shared.dll">
+      <publishTime>07/24/2021 00:53:58</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/HuntingStoreMongoDb.Shared.dll.br">
+      <publishTime>07/24/2021 00:57:13</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/HuntingStoreMongoDb.Shared.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/icudt.dat">
+      <publishTime>05/05/2021 23:53:44</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/icudt.dat.br">
+      <publishTime>07/24/2021 00:56:03</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/icudt.dat.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/icudt_CJK.dat">
+      <publishTime>05/05/2021 23:53:44</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/icudt_CJK.dat.br">
+      <publishTime>07/24/2021 00:56:53</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/icudt_CJK.dat.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/icudt_EFIGS.dat">
+      <publishTime>05/05/2021 23:53:44</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/icudt_EFIGS.dat.br">
+      <publishTime>07/24/2021 00:57:11</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/icudt_EFIGS.dat.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/icudt_no_CJK.dat">
+      <publishTime>05/05/2021 23:53:44</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/icudt_no_CJK.dat.br">
+      <publishTime>07/24/2021 00:57:21</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/icudt_no_CJK.dat.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/libman.json">
+      <publishTime>07/21/2021 02:05:34</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/libman.json.br">
+      <publishTime>07/24/2021 00:54:12</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/libman.json.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.AspNetCore.Authorization.dll">
+      <publishTime>07/24/2021 00:53:59</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.AspNetCore.Authorization.dll.br">
+      <publishTime>07/24/2021 00:57:25</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.AspNetCore.Authorization.dll.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.AspNetCore.Components.Authorization.dll">
+      <publishTime>07/24/2021 00:54:01</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.AspNetCore.Components.Authorization.dll.br">
+      <publishTime>07/24/2021 00:57:27</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.AspNetCore.Components.Authorization.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.AspNetCore.Components.dll">
+      <publishTime>07/24/2021 00:54:01</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.AspNetCore.Components.dll.br">
+      <publishTime>07/24/2021 00:57:27</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.AspNetCore.Components.dll.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.AspNetCore.Components.Forms.dll">
+      <publishTime>07/24/2021 00:54:01</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.AspNetCore.Components.Forms.dll.br">
+      <publishTime>07/24/2021 00:57:28</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.AspNetCore.Components.Forms.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.AspNetCore.Components.Web.dll">
+      <publishTime>07/24/2021 00:54:01</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.AspNetCore.Components.Web.dll.br">
+      <publishTime>07/24/2021 00:57:28</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.AspNetCore.Components.Web.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.AspNetCore.Components.WebAssembly.dll">
+      <publishTime>07/24/2021 00:54:01</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.AspNetCore.Components.WebAssembly.dll.br">
+      <publishTime>07/24/2021 00:57:29</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.AspNetCore.Components.WebAssembly.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.AspNetCore.Metadata.dll">
+      <publishTime>07/24/2021 00:53:59</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.AspNetCore.Metadata.dll.br">
+      <publishTime>07/24/2021 00:57:29</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.AspNetCore.Metadata.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Bcl.AsyncInterfaces.dll">
+      <publishTime>07/24/2021 00:53:55</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Bcl.AsyncInterfaces.dll.br">
+      <publishTime>07/24/2021 00:57:29</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Bcl.AsyncInterfaces.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Bcl.HashCode.dll">
+      <publishTime>07/24/2021 00:53:56</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Bcl.HashCode.dll.br">
+      <publishTime>07/24/2021 00:57:29</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Bcl.HashCode.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.EntityFrameworkCore.Abstractions.dll">
+      <publishTime>07/24/2021 00:53:56</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.EntityFrameworkCore.Abstractions.dll.br">
+      <publishTime>07/24/2021 00:54:39</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.EntityFrameworkCore.Abstractions.dll.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.EntityFrameworkCore.dll">
+      <publishTime>07/24/2021 00:53:56</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.EntityFrameworkCore.dll.br">
+      <publishTime>07/24/2021 00:55:38</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.EntityFrameworkCore.dll.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Caching.Abstractions.dll">
+      <publishTime>07/24/2021 00:54:01</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Caching.Abstractions.dll.br">
+      <publishTime>07/24/2021 00:54:39</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Caching.Abstractions.dll.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Caching.Memory.dll">
+      <publishTime>07/24/2021 00:54:01</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Caching.Memory.dll.br">
+      <publishTime>07/24/2021 00:54:40</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Caching.Memory.dll.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Configuration.Abstractions.dll">
+      <publishTime>07/24/2021 00:54:01</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Configuration.Abstractions.dll.br">
+      <publishTime>07/24/2021 00:54:41</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Configuration.Abstractions.dll.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Configuration.dll">
+      <publishTime>07/24/2021 00:54:01</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Configuration.dll.br">
+      <publishTime>07/24/2021 00:54:40</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Configuration.dll.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Configuration.Json.dll">
+      <publishTime>07/24/2021 00:54:01</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Configuration.Json.dll.br">
+      <publishTime>07/24/2021 00:54:41</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Configuration.Json.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+      <publishTime>07/24/2021 00:53:59</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.DependencyInjection.Abstractions.dll.br">
+      <publishTime>07/24/2021 00:54:43</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.DependencyInjection.dll">
+      <publishTime>07/24/2021 00:54:01</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.DependencyInjection.dll.br">
+      <publishTime>07/24/2021 00:54:42</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.DependencyInjection.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Logging.Abstractions.dll">
+      <publishTime>07/24/2021 00:53:59</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Logging.Abstractions.dll.br">
+      <publishTime>07/24/2021 00:54:45</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Logging.dll">
+      <publishTime>07/24/2021 00:54:01</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Logging.dll.br">
+      <publishTime>07/24/2021 00:54:44</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Logging.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Options.dll">
+      <publishTime>07/24/2021 00:53:59</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Options.dll.br">
+      <publishTime>07/24/2021 00:54:46</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Options.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Primitives.dll">
+      <publishTime>07/24/2021 00:54:01</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Primitives.dll.br">
+      <publishTime>07/24/2021 00:54:46</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Extensions.Primitives.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.JSInterop.dll">
+      <publishTime>07/24/2021 00:53:56</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.JSInterop.dll.br">
+      <publishTime>07/24/2021 00:54:47</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.JSInterop.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.JSInterop.WebAssembly.dll">
+      <publishTime>07/24/2021 00:53:56</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.JSInterop.WebAssembly.dll.br">
+      <publishTime>07/24/2021 00:54:48</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.JSInterop.WebAssembly.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Win32.Primitives.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Win32.Primitives.dll.br">
+      <publishTime>07/24/2021 00:57:16</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Microsoft.Win32.Primitives.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/MongoDB.Bson.dll">
+      <publishTime>07/24/2021 00:53:57</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/MongoDB.Bson.dll.br">
+      <publishTime>07/24/2021 00:55:13</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/MongoDB.Bson.dll.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/MongoDB.Driver.Core.dll">
+      <publishTime>07/24/2021 00:53:58</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/MongoDB.Driver.Core.dll.br">
+      <publishTime>07/24/2021 00:56:32</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/MongoDB.Driver.Core.dll.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/MongoDB.Driver.dll">
+      <publishTime>07/24/2021 00:53:57</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/MongoDB.Driver.dll.br">
+      <publishTime>07/24/2021 00:55:42</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/MongoDB.Driver.dll.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/MongoDB.Libmongocrypt.dll">
+      <publishTime>07/24/2021 00:53:58</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/MongoDB.Libmongocrypt.dll.br">
+      <publishTime>07/24/2021 00:56:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/MongoDB.Libmongocrypt.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Newtonsoft.Json.dll">
+      <publishTime>07/24/2021 00:53:58</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Newtonsoft.Json.dll.br">
+      <publishTime>07/24/2021 00:57:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/Newtonsoft.Json.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/SharpCompress.dll">
+      <publishTime>07/24/2021 00:53:58</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/SharpCompress.dll.br">
+      <publishTime>07/24/2021 00:57:11</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/SharpCompress.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Collections.Concurrent.dll">
+      <publishTime>07/24/2021 00:53:59</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Collections.Concurrent.dll.br">
+      <publishTime>07/24/2021 00:57:17</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Collections.Concurrent.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Collections.dll">
+      <publishTime>07/24/2021 00:53:59</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Collections.dll.br">
+      <publishTime>07/24/2021 00:57:21</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Collections.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Collections.Immutable.dll">
+      <publishTime>07/24/2021 00:54:01</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Collections.Immutable.dll.br">
+      <publishTime>07/24/2021 00:57:19</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Collections.Immutable.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Collections.NonGeneric.dll">
+      <publishTime>07/24/2021 00:53:59</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Collections.NonGeneric.dll.br">
+      <publishTime>07/24/2021 00:57:19</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Collections.NonGeneric.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Collections.Specialized.dll">
+      <publishTime>07/24/2021 00:53:59</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Collections.Specialized.dll.br">
+      <publishTime>07/24/2021 00:57:20</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Collections.Specialized.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.ComponentModel.Annotations.dll">
+      <publishTime>07/24/2021 00:54:01</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.ComponentModel.Annotations.dll.br">
+      <publishTime>07/24/2021 00:57:21</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.ComponentModel.Annotations.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.ComponentModel.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.ComponentModel.dll.br">
+      <publishTime>07/24/2021 00:55:32</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.ComponentModel.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.ComponentModel.Primitives.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.ComponentModel.Primitives.dll.br">
+      <publishTime>07/24/2021 00:57:22</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.ComponentModel.Primitives.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.ComponentModel.TypeConverter.dll">
+      <publishTime>07/24/2021 00:53:59</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.ComponentModel.TypeConverter.dll.br">
+      <publishTime>07/24/2021 00:57:24</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.ComponentModel.TypeConverter.dll.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Console.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Console.dll.br">
+      <publishTime>07/24/2021 00:55:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Console.dll.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Data.Common.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Data.Common.dll.br">
+      <publishTime>07/24/2021 00:56:29</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Data.Common.dll.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>07/24/2021 00:54:01</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Diagnostics.DiagnosticSource.dll.br">
+      <publishTime>07/24/2021 00:55:39</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Diagnostics.DiagnosticSource.dll.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Diagnostics.Process.dll">
+      <publishTime>07/24/2021 00:53:59</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Diagnostics.Process.dll.br">
+      <publishTime>07/24/2021 00:55:39</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Diagnostics.Process.dll.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Diagnostics.TextWriterTraceListener.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Diagnostics.TextWriterTraceListener.dll.br">
+      <publishTime>07/24/2021 00:55:40</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Diagnostics.TextWriterTraceListener.dll.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Diagnostics.TraceSource.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Diagnostics.TraceSource.dll.br">
+      <publishTime>07/24/2021 00:55:41</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Diagnostics.TraceSource.dll.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Drawing.Primitives.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Drawing.Primitives.dll.br">
+      <publishTime>07/24/2021 00:55:42</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Drawing.Primitives.dll.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.IO.Compression.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.IO.Compression.dll.br">
+      <publishTime>07/24/2021 00:55:43</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.IO.Compression.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.IO.FileSystem.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.IO.FileSystem.dll.br">
+      <publishTime>07/24/2021 00:55:43</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.IO.FileSystem.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.IO.Pipelines.dll">
+      <publishTime>07/24/2021 00:53:58</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.IO.Pipelines.dll.br">
+      <publishTime>07/24/2021 00:57:13</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.IO.Pipelines.dll.gz">
+      <publishTime>07/24/2021 00:57:33</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Linq.dll">
+      <publishTime>07/24/2021 00:53:59</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Linq.dll.br">
+      <publishTime>07/24/2021 00:56:01</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Linq.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Linq.Expressions.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Linq.Expressions.dll.br">
+      <publishTime>07/24/2021 00:56:18</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Linq.Expressions.dll.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Linq.Queryable.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Linq.Queryable.dll.br">
+      <publishTime>07/24/2021 00:55:46</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Linq.Queryable.dll.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Memory.dll">
+      <publishTime>07/24/2021 00:53:59</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Memory.dll.br">
+      <publishTime>07/24/2021 00:56:03</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Memory.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Net.Http.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Net.Http.dll.br">
+      <publishTime>07/24/2021 00:56:16</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Net.Http.dll.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Net.Http.Json.dll">
+      <publishTime>07/24/2021 00:54:02</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Net.Http.Json.dll.br">
+      <publishTime>07/24/2021 00:56:04</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Net.Http.Json.dll.gz">
+      <publishTime>07/24/2021 00:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Net.NameResolution.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Net.NameResolution.dll.br">
+      <publishTime>07/24/2021 00:56:17</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Net.NameResolution.dll.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Net.NetworkInformation.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Net.NetworkInformation.dll.br">
+      <publishTime>07/24/2021 00:56:18</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Net.NetworkInformation.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Net.Primitives.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Net.Primitives.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Net.Security.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Net.Security.dll.br">
+      <publishTime>07/24/2021 00:55:43</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Net.Security.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Net.Sockets.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Net.Sockets.dll.br">
+      <publishTime>07/24/2021 00:55:44</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Net.Sockets.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.ObjectModel.dll">
+      <publishTime>07/24/2021 00:53:59</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.ObjectModel.dll.br">
+      <publishTime>07/24/2021 00:55:45</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.ObjectModel.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Private.CoreLib.dll">
+      <publishTime>07/24/2021 00:53:56</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Private.CoreLib.dll.br">
+      <publishTime>07/24/2021 00:57:32</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Private.CoreLib.dll.gz">
+      <publishTime>07/24/2021 00:57:37</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Private.Runtime.InteropServices.JavaScript.dll">
+      <publishTime>07/24/2021 00:54:01</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Private.Runtime.InteropServices.JavaScript.dll.br">
+      <publishTime>07/24/2021 00:55:46</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Private.Runtime.InteropServices.JavaScript.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Private.Uri.dll">
+      <publishTime>07/24/2021 00:53:59</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Private.Uri.dll.br">
+      <publishTime>07/24/2021 00:55:49</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Private.Uri.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Private.Xml.dll">
+      <publishTime>07/24/2021 00:54:01</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Private.Xml.dll.br">
+      <publishTime>07/24/2021 00:56:42</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Private.Xml.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Private.Xml.Linq.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Private.Xml.Linq.dll.br">
+      <publishTime>07/24/2021 00:55:50</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Private.Xml.Linq.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Runtime.CompilerServices.Unsafe.dll.br">
+      <publishTime>07/24/2021 00:56:43</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Runtime.CompilerServices.Unsafe.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Runtime.InteropServices.RuntimeInformation.dll.br">
+      <publishTime>07/24/2021 00:56:43</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Runtime.InteropServices.RuntimeInformation.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Runtime.Numerics.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Runtime.Numerics.dll.br">
+      <publishTime>07/24/2021 00:56:44</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Runtime.Numerics.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Runtime.Serialization.Formatters.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Runtime.Serialization.Formatters.dll.br">
+      <publishTime>07/24/2021 00:56:44</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Runtime.Serialization.Formatters.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Runtime.Serialization.Primitives.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Runtime.Serialization.Primitives.dll.br">
+      <publishTime>07/24/2021 00:56:44</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Runtime.Serialization.Primitives.dll.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Security.Claims.dll">
+      <publishTime>07/24/2021 00:53:59</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Security.Claims.dll.br">
+      <publishTime>07/24/2021 00:56:44</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Security.Claims.dll.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Security.Cryptography.Algorithms.dll.br">
+      <publishTime>07/24/2021 00:56:45</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Security.Cryptography.Algorithms.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Security.Cryptography.Csp.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Security.Cryptography.Csp.dll.br">
+      <publishTime>07/24/2021 00:56:45</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Security.Cryptography.Csp.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Security.Cryptography.Primitives.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Security.Cryptography.Primitives.dll.br">
+      <publishTime>07/24/2021 00:56:45</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Security.Cryptography.Primitives.dll.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>07/24/2021 00:53:59</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Security.Cryptography.X509Certificates.dll.br">
+      <publishTime>07/24/2021 00:55:43</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Security.Cryptography.X509Certificates.dll.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Text.Encoding.CodePages.dll">
+      <publishTime>07/24/2021 00:54:02</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Text.Encoding.CodePages.dll.br">
+      <publishTime>07/24/2021 00:57:02</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Text.Encoding.CodePages.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Text.Encodings.Web.dll">
+      <publishTime>07/24/2021 00:54:01</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Text.Encodings.Web.dll.br">
+      <publishTime>07/24/2021 00:57:02</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Text.Encodings.Web.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Text.Json.dll">
+      <publishTime>07/24/2021 00:54:01</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Text.Json.dll.br">
+      <publishTime>07/24/2021 00:57:07</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Text.Json.dll.gz">
+      <publishTime>07/24/2021 00:57:35</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Text.RegularExpressions.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Text.RegularExpressions.dll.br">
+      <publishTime>07/24/2021 00:57:09</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Text.RegularExpressions.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Transactions.Local.dll">
+      <publishTime>07/24/2021 00:54:00</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Transactions.Local.dll.br">
+      <publishTime>07/24/2021 00:57:10</publishTime>
+    </File>
+    <File Include="wwwroot/_framework/System.Transactions.Local.dll.gz">
+      <publishTime>07/24/2021 00:57:36</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

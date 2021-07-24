@@ -1,0 +1,81 @@
+﻿@page "/login"
+@layout StoreLayout
+
+@inject NavigationManager navigationManager
+@inject CustomStateProvider authorizeProvider
+@inject IJSRuntime jsRuntime
+
+<div class="col-sm-12">
+    <h3 class="text-center">Sign in</h3>
+    <div class="row">
+        <div class="col-sm-3" />
+        <div class="col-sm-6">
+            <EditForm OnValidSubmit="@LoginUser" Model="@loginModel">
+                <div>
+                    <DataAnnotationsValidator />
+                    <ValidationSummary />
+                </div>
+                <div class="form-group">
+                    <label style="font-weight:bold">
+                        <span class="fa fa-user" aria-hidden="true"></span>&nbsp;User name
+                    </label>
+                </div>
+                <div>
+                    <InputText class="form-control" @bind-Value="loginModel.UserName"></InputText>
+                </div>
+                <div class="form-group mt-2">
+                    <label style="font-weight:bold">
+                        <span class="fa fa-key" aria-hidden="true"></span>&nbsp;Password
+                    </label>
+                </div>
+                <div>
+                    <InputText class="form-control" @bind-Value="loginModel.Password" type="password"></InputText>
+                </div>
+                <div class="form-group">
+                    <label></label>
+                </div>
+                <div class="form-group mt-3">
+                    <button type="submit" class="btn btn-success">Login</button>
+                    <button class="btn btn-secondary ml-2" @onclick="@(e => Cancel(e))" @onclick:preventDefault @onclick:stopPropagation>Cancel</button>
+                </div>
+            </EditForm>
+        </div>
+        <div class="col-sm-3" />
+    </div>
+</div>
+
+<CascadingValue Value="@Message">
+    <MessageModal CloseModal="@CloseMessageModal"></MessageModal>
+</CascadingValue>
+
+@code {
+
+    private LoginModel loginModel = new LoginModel();
+    private string Message { get; set; }
+
+    private async Task LoginUser()
+    {
+        var isLogged = await authorizeProvider.Login(loginModel);
+        //await Task.Delay(3000);
+        if (isLogged)
+        {
+            navigationManager.NavigateTo("/admin/products");
+            
+        }
+        else
+        {
+            Message = "You are not authorized!";
+            await jsRuntime.InvokeVoidAsync("ShowMessageModal");
+        }
+    }
+
+    private void Cancel(MouseEventArgs e)
+    {
+        navigationManager.NavigateTo("/");
+    }
+
+    private void CloseMessageModal()
+    {
+        jsRuntime.InvokeVoidAsync("HideMessageModal");
+    }
+}

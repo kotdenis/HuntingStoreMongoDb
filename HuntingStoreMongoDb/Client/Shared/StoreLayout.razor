@@ -1,0 +1,40 @@
+﻿@inherits LayoutComponentBase
+@inject NavigationManager navigationManager
+
+<div class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><strong>Hunting Store</strong></a>
+        <form class="d-flex">
+            <button class="btn btn-outline-success" @onclick="async _ => await RedirectToAdministration()" @onclick:preventDefault
+                    @onclick:stopPropagation>
+                Administration
+            </button>
+        </form>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        @Body
+    </div>
+</div>
+
+@code {
+
+    [CascadingParameter]
+    Task<AuthenticationState> AuthenticationState { get; set; }
+
+    private async Task RedirectToAdministration()
+    {
+        if (!(await AuthenticationState).User.Identity.IsAuthenticated)
+        {
+            navigationManager.NavigateTo("/login");
+        }
+        else
+        {
+            navigationManager.NavigateTo("/admin/products");
+        }
+
+    }
+
+
+}

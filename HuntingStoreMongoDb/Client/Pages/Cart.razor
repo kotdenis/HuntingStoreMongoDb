@@ -1,0 +1,82 @@
+﻿@page "/cart"
+@layout StoreLayout
+
+@inject State state
+@inject NavigationManager navigationManager
+
+<div class="col-sm-12">
+    <div class="container-fluid">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Quantity</th>
+                    <th>Item</th>
+                    <th class="text-right">Price</th>
+                    <th class="text-right">Subtotal</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var cartline in state.CartLineViewModels)
+                {
+                    <tr>
+                        <td class="text-center">@cartline.Quantity</td>
+                        <td class="text-left">@cartline.Name</td>
+                        <td class="text-right">@cartline.Price.ToString()&nbsp;<span class="fa fa-rub"></span></td>
+                        <td class="text-right">@((cartline.Price * cartline.Quantity).ToString())&nbsp;<span class="fa fa-rub"></span></td>
+                        <td class="text-center">
+                            <button class="btn btn-danger" @onclick="@(e => Delete(e, cartline))">Delete</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="text-right">Total:</td>
+                    <td class="text-right" style="font-weight:bold">
+                        @Total.ToString("c")
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+<div class="text-center" style="justify-content:center">
+    <a class="btn btn-info" @onclick="@(e => ContinueShopping(e))" style="font-weight:bold">Continue shopping</a>
+    <button type="button" class="btn btn-success ml-5" @onclick="@(e => Checkout(e))">Checkout</button>
+</div>
+
+@code {
+
+    private decimal Total { get; set; } = 0;
+
+    protected override void OnParametersSet()
+    {
+        foreach (var t in state.CartLineViewModels)
+        {
+            Total += t.Quantity * t.Price;
+        }
+    }
+
+    private void Delete(MouseEventArgs e, CartLineViewModel cartLine)
+    {
+        state.CartLineViewModels.Remove(cartLine);
+        Total = 0;
+        foreach (var t in state.CartLineViewModels)
+        {
+            Total += t.Quantity * t.Price;
+        }
+        StateHasChanged();
+    }
+
+    private void Checkout(MouseEventArgs e)
+    {
+        navigationManager.NavigateTo("/checkout");
+    }
+
+    private void ContinueShopping(MouseEventArgs e)
+    {
+        navigationManager.NavigateTo("/");
+    }
+}

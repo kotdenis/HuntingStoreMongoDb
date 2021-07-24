@@ -1,0 +1,93 @@
+﻿@page "/admin/editor/{id}"
+@layout AdminLayout
+
+@inject NavigationManager navigatinManager
+@inject State state
+@inject IAdminService adminService
+@inject IJSRuntime jsRuntime
+@using Microsoft.AspNetCore.Authorization
+
+@attribute [Authorize]
+
+
+<h3 class="text-center mt-2" style="background-color:darkseagreen;color:white">Edit product</h3>
+
+<EditForm OnValidSubmit="@(_ => EditProductAsync())" Model="@Products">
+    <div>
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+    </div>
+    <div class="form-group">
+        <label style="font-weight:bold">
+            <span class="fa fa-id-card" aria-hidden="true"></span>&nbsp;Name
+        </label>
+        <div>
+            <InputText class="form-control" @bind-Value="@Products.Name"></InputText>
+        </div>
+    </div>
+    <div class="form-group mt-2">
+        <label style="font-weight:bold">
+            <span class="fa fa-folder-open" aria-hidden="true"></span>&nbsp;Desscription
+        </label>
+        <div>
+            <InputText class="form-control" @bind-Value="@Products.Description"></InputText>
+        </div>
+    </div>
+    <div class="form-group mt-2">
+        <label style="font-weight:bold">
+            <span class="fa fa-credit-card" aria-hidden="true"></span>&nbsp;Price
+        </label>
+        <div>
+            <InputNumber class="form-control" @bind-Value="@Products.Price"></InputNumber>
+        </div>
+    </div>
+    <div class="form-group">
+        <label></label>
+    </div>
+    <div class="mt-2">
+        <button type="submit" class="btn btn-success">Edit product</button>
+        <button class="btn btn-secondary ml-2" @onclick="@(e => Cancel(e))">Cancel</button>
+    </div>
+</EditForm>
+
+<CascadingValue Value="@Message">
+    <MessageModal CloseModal="@CloseMessageModal"></MessageModal>
+</CascadingValue>
+
+@code {
+
+    private Product Products = new Product();
+    private string Message { get; set; }
+
+    [Parameter]
+    public string id { get; set; } = "";
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (id != "")
+            Products = state.AdminProducts.Where(x => x.Id == id).FirstOrDefault();
+        await Task.CompletedTask;
+    }
+
+    private async Task EditProductAsync()
+    {
+
+        var response = await adminService.EditProductAsync(Products);
+        if (response.IsSuccessStatusCode)
+        {
+            Message = await response.Content.ReadAsStringAsync();
+            await jsRuntime.InvokeVoidAsync("ShowMessageModal");
+        }
+    }
+
+    private void Cancel(MouseEventArgs e)
+    {
+        navigatinManager.NavigateTo("/admin/products");
+    }
+
+    private void CloseMessageModal()
+    {
+        jsRuntime.InvokeVoidAsync("HideMessageModal");
+        navigatinManager.NavigateTo("/admin/products");
+    }
+}

@@ -1,0 +1,38 @@
+﻿
+<div class="container-fluid">
+    <div class="nav flex-column">
+        <div class="@(IsAll == true  ? classInfo : classDark)" style="font-weight:bold;"
+                    @onclick="@(e => SelectCategory(e, "All"))">
+            All
+        </div>
+        @foreach (var category in Categories)
+        {
+            <div class="@(Category == category ? classInfo : classDark)" style="font-weight:bold;"
+                         @onclick="@(e => SelectCategory(e, category))">
+
+               
+                @category
+            </div>
+        }
+    </div>
+</div>
+
+
+@code {
+
+    private string classDark = "nav-item btn btn-dark btn-block mt-2";
+    private string classInfo = "nav-item btn btn-info btn-block mt-2";
+
+    [Parameter]
+    public List<string> Categories { get; set; }
+
+    [Parameter]
+    public string Category { get; set; }
+
+    [Parameter]
+    public bool IsAll { get; set; }
+
+    [Parameter]
+    public Action<MouseEventArgs, string> SelectCategory { get; set; }
+
+}

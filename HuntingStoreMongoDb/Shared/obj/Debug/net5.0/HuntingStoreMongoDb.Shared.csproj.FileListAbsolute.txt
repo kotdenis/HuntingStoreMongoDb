@@ -1,0 +1,12 @@
+C:\Users\DENIS\source\repos\HuntingStoreMongoDb\HuntingStoreMongoDb\Shared\bin\Debug\net5.0\HuntingStoreMongoDb.Shared.deps.json
+C:\Users\DENIS\source\repos\HuntingStoreMongoDb\HuntingStoreMongoDb\Shared\bin\Debug\net5.0\HuntingStoreMongoDb.Shared.dll
+C:\Users\DENIS\source\repos\HuntingStoreMongoDb\HuntingStoreMongoDb\Shared\bin\Debug\net5.0\ref\HuntingStoreMongoDb.Shared.dll
+C:\Users\DENIS\source\repos\HuntingStoreMongoDb\HuntingStoreMongoDb\Shared\bin\Debug\net5.0\HuntingStoreMongoDb.Shared.pdb
+C:\Users\DENIS\source\repos\HuntingStoreMongoDb\HuntingStoreMongoDb\Shared\obj\Debug\net5.0\HuntingStoreMongoDb.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DENIS\source\repos\HuntingStoreMongoDb\HuntingStoreMongoDb\Shared\obj\Debug\net5.0\HuntingStoreMongoDb.Shared.AssemblyInfoInputs.cache
+C:\Users\DENIS\source\repos\HuntingStoreMongoDb\HuntingStoreMongoDb\Shared\obj\Debug\net5.0\HuntingStoreMongoDb.Shared.AssemblyInfo.cs
+C:\Users\DENIS\source\repos\HuntingStoreMongoDb\HuntingStoreMongoDb\Shared\obj\Debug\net5.0\HuntingStoreMongoDb.Shared.csproj.CoreCompileInputs.cache
+C:\Users\DENIS\source\repos\HuntingStoreMongoDb\HuntingStoreMongoDb\Shared\obj\Debug\net5.0\HuntingStoreMongoDb.Shared.dll
+C:\Users\DENIS\source\repos\HuntingStoreMongoDb\HuntingStoreMongoDb\Shared\obj\Debug\net5.0\ref\HuntingStoreMongoDb.Shared.dll
+C:\Users\DENIS\source\repos\HuntingStoreMongoDb\HuntingStoreMongoDb\Shared\obj\Debug\net5.0\HuntingStoreMongoDb.Shared.pdb
+C:\Users\DENIS\source\repos\HuntingStoreMongoDb\HuntingStoreMongoDb\Shared\obj\Debug\net5.0\HuntingStoreMongoDb.Shared.csproj.AssemblyReference.cache

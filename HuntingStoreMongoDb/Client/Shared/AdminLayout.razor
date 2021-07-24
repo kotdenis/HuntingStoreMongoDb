@@ -1,0 +1,68 @@
+﻿@inherits LayoutComponentBase
+
+@inject NavigationManager navigationManager
+@inject CustomStateProvider authorizeProvider
+@inject ILocalStorageService storageService
+@using Microsoft.AspNetCore.Authorization
+
+@attribute [Authorize]
+
+<div class="navbar" style="background-color:teal">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/" style="color:white"><strong>Hunting Store Admin</strong></a>
+        <form class="d-flex">
+            <button class="btn btn-outline-info" @onclick="@Logout" @onclick:preventDefault @onclick:stopPropagation>Logout</button>
+        </form>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3">
+            <ul class="nav flex-column mt-3">
+                <li class="nav-item px-3">
+                    <NavLink class="btn btn-outline-primary btn-block"
+                             href="/admin/products"
+                             ActiveClass="btn-primary text-white"
+                             Match="NavLinkMatch.Prefix"
+                             style="width:100px">
+                        Products
+                    </NavLink>
+                </li>
+                <li class="nav-item px-3 mt-3">
+                    <NavLink class="btn btn-outline-primary btn-block"
+                             href="/admin/orders"
+                             ActiveClass="btn-primary text-white"
+                             Match="NavLinkMatch.Prefix"
+                             style="width:100px">
+                        Orders
+                    </NavLink>
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-9">
+            @Body
+        </div>
+    </div>
+</div>
+
+@code {
+
+    [CascadingParameter]
+    Task<AuthenticationState> AuthenticationState { get; set; }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (!(await AuthenticationState).User.Identity.IsAuthenticated)
+        {
+            navigationManager.NavigateTo("/login");
+        }
+    }
+
+    private async Task Logout()
+    {
+        await authorizeProvider.Logout();
+        navigationManager.NavigateTo("/");
+        StateHasChanged();
+
+    }
+}

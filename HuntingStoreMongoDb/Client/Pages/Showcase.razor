@@ -1,0 +1,142 @@
+﻿@page "/"
+@layout StoreLayout
+
+@inject IProductService productService
+@inject State state
+@inject NavigationManager navigationManager
+@using BlazorPagination
+
+<div class="col-sm-3">
+   
+    <ProductMenu Categories="@Categories" Category="@_category" 
+                 SelectCategory="@SelectCategory" IsAll="@isAll"></ProductMenu>
+   
+</div>
+<div class="col-sm-9">
+
+    @if (!_loaded)
+    {
+        <div class="container mt-3">
+            <div class="spinner-border text-success align-self-sm-center" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <h2>Getting datas from database...</h2>
+        </div>
+    }
+    else
+    {
+        <CascadingValue Value="pagedResultList">
+            <ProductList AddToCart="@AddToCart" GetData="@GetData" />
+        </CascadingValue>
+    }
+
+
+    <div class="mt-2">
+        <BlazorPager CurrentPage="@pagedResultList.CurrentPage"
+                     PageCount="@pagedResultList.PageCount"
+                     VisiblePages="@_visiblePages"
+                     ShowFirstLast="true"
+                     ShowPageNumbers="true"
+                     FirstText="&laquo;"
+                     LastText="&raquo;"
+                     NextText="&rsaquo;"
+                     PreviousText="&lsaquo;"
+                     OnPageChanged="@(async e => { _page = e; await GetData(); })">
+
+        </BlazorPager>
+
+    </div>
+</div>
+    @code {
+
+        private string _category = "All";
+        private bool isAll = true;
+        private List<string> Categories { get; set; } = new List<string>();
+        private int _page = 1;
+        private int _visiblePages = 0;
+        private int _pageSize = 4;
+        private PagedResult<Product> pagedResultList = new PagedResult<Product>();
+        private bool _loaded = false;
+
+        protected override async Task OnParametersSetAsync()
+        {
+            state.Products = await productService.GetProductsAsync();
+            _visiblePages = (state.Products.Count / _pageSize) + 1;
+            await GetData();
+            foreach (var cat in state.Products.Select(x => x.Category).Distinct())
+            {
+                Categories.Add(cat);
+            }
+
+        }
+
+        private void SelectCategory(MouseEventArgs e, string category)
+        {
+            List<Product> list = new List<Product>();
+            if (category != "All")
+            {
+                list = state.Products.Where(x => x.Category == category).ToList();
+                _category = category;
+                isAll = false;
+            }
+            else
+            {
+                list = state.Products;
+                _category = "All";
+                isAll = true;
+            }
+            _visiblePages = (list.Count / _pageSize) + 1;
+            pagedResultList = list.AsQueryable().ToPagedResult(_page, _pageSize);
+            StateHasChanged();
+        }
+
+        private async Task GetData()
+        {
+            pagedResultList = GetProduct(_page, _pageSize);
+            if (state.Products.Count != 0)
+            {
+                _loaded = true;
+                await Task.CompletedTask;
+                StateHasChanged();
+            }
+            else
+            {
+                state.Products = await productService.GetProductsAsync();
+            }
+        }
+
+        private PagedResult<Product> GetProduct(int page, int pageSize)
+        {
+            return state.Products.AsQueryable().ToPagedResult(page, pageSize);
+        }
+
+        private void AddToCart(MouseEventArgs e, Product product)
+        {
+            CartLineViewModel cartLine = state.CartLineViewModels.Where(x => x.ProductId == product.Id).FirstOrDefault();
+            if (cartLine == null)
+            {
+                state.CartLineViewModels.Add(new CartLineViewModel()
+                {
+                    ProductId = product.Id,
+                    Name = product.Name,
+                    Price = product.Price,
+                    Quantity = 1
+                });
+            }
+            else
+            {
+                var line = new CartLineViewModel()
+                {
+                    Name = cartLine.Name,
+                    Quantity = cartLine.Quantity + 1,
+                    ProductId = cartLine.ProductId,
+                    Price = cartLine.Price
+                };
+                state.CartLineViewModels.Remove(cartLine);
+                state.CartLineViewModels.Add(line);
+            }
+
+            navigationManager.NavigateTo("/cart");
+        }
+
+    }
